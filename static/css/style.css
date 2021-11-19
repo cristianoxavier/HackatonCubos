@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body {
+    background-image: url('../img/startbg.png');
+}
+html, body {height:100%;}
+.fontWhite {
+  color: #fff;
+}
+.fs {
+  text-shadow: 0.1em 0.1em 0.1em gray;
+}
+.f-bold{
+  font-weight: bold;
+}
+.center-obj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-top: auto;
+}
+.obj-relative-92 {
+  max-height: 92px;
+  position: relative;
+}
+.hw-obj {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  width: auto;
+}
+.search-obj {
+  display: flex;
+  box-shadow: none;
+  border-radius: 24px;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  width: auto;
+  max-width: 584px;
+}
+.bg-body {
+  background-color: #202124;
+}
+.imgs {
+  display: flex;
+  position: relative;
+  z-index: -1;
+}
+.yllw {
+  background: yellow !important;
+}
+.title-home {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 5%;
+    margin-bottom: 0;
+    position: relative;
+}
+.title-home {
+    font-family: 'Anton', sans-serif;
+    text-shadow: 0.1em 0.1em 0.1em gray;
+
+}
+.mgrl {
+  width: 70%;
+  margin: auto;
+}
+.rckt {
+  width: 70%;
+  margin: auto;
+}
+
+
+.footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+*  {
+  margin:0;
+  padding:0;
+}
+
+
+
+.geral {
+  min-height:90%;
+  position:relative;
+  width:800px;
+}
+
+.footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+@media only screen and (max-width: 600px) {
+  .mgrl {
+    width: 100%;
+  }
+  .rckt {
+    width: 100%;
+  }
+  
+}
