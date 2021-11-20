@@ -4,31 +4,51 @@
 
 <div class="container d-flex justify-content-center align-items-center mb-5 mt-5 geral">
     <div class="card">
-        <div class="text-center intro"> <img src="../static/img/SVG/icon_log.svg" width="160">
-        </div>
-        <div class="mt-4 text-center">
-            <h4>{%block title%}Cadastrar{%endblock%}</h4> <span>Preencha os campos abaixo</span>
-            <div class="mt-3 inputbox"> <input type="text" class="form-control" name="" placeholder="Email"> <i
-                                                                                        class="fa fa-user"></i> </div>
-            <div class="inputbox"> <input type="text" class="form-control" name="" placeholder="Password"> <i
-                                                                                   class="fa fa-lock"></i> </div>
-            <div class="inputbox"> <input type="text" class="form-control" name="" placeholder="Confirm Password"> <i
-                                                                                   class="fa fa-lock"></i> </div>
-            <div class="inputbox"> <input type="text" class="form-control" name="" placeholder="Name"> <i
-                                                                                   class="fa fa-lock"></i> </div>
-            <div class="inputbox"> <input type="text" class="form-control" name="" placeholder="Last Name"> <i
-                                                                                   class="fa fa-lock"></i> </div>
-
-        </div>
-        <div class="d-flex justify-content-between">
-            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault"> Continuar logado. </label>
+        <form>
+            <div class="text-center intro"> <img src="../static/img/SVG/icon_signup.svg" width="200">
             </div>
-
-        </div>
-        <div class="mt-2"> <button class="btn btn-primary btn-block">Cadastrar</button> </div>
+            <div class="mt-4 text-center">
+                <h4>{%block title%}Cadastrar{%endblock%}</h4> <span>Preencha os campos abaixo | Selecione</span><hr>
+                <div class="container mb-3" id="radio_option">
+                    <input class=" stlBtn1" type="button" id="_1234" name="fav_language" onClick="mostrar('div1')" value="Empresa">
+                    <input class=" stlBtn2" type="button" id="_1235" name="fav_language" onClick="mostrar('div2')" value="Aluno">
+                </div><hr>
+                <div class=" hidden mt-3" id="div2" style="display: none;">
+                    <label>Aluno</label>
+                    <div class="mt-3 inputbox"> <input type="email" class="form-control" name="email" placeholder="Email"> </div>
+                    <div class="inputbox"> <input type="password" class="form-control" name="password" placeholder="Password">  </div>
+                    <div class="inputbox"> <input type="password" class="form-control" name="confirm_passwordpassword" placeholder="Confirm Password">  </div>
+                    <div class="inputbox"> <input type="text" class="form-control" name="cpf" placeholder="CPF">  </div>
+                    <div class="inputbox"> <input type="text" class="form-control" name="name" placeholder="Nome">  </div>
+                    <div class="inputbox"> <input type="text" class="form-control" name="lastname" placeholder="Sobrenome">  </div>
+                </div>
+                <div class=" hidden mt-3" id="div1" style="display: none;">
+                    <label>Empresa</label>
+                    <div class="mt-3 inputbox"> <input type="email" class="form-control" name="email" placeholder="Email"> </div>
+                    <div class="inputbox"> <input type="password" class="form-control" name="password" placeholder="Password">  </div>
+                    <div class="inputbox"> <input type="password" class="form-control" name="confirm_passwordpassword" placeholder="Confirm Password">  </div>
+                    <div class="inputbox"> <input type="text" class="form-control" name="cpf" placeholder="CPF">  </div>
+                    <div class="inputbox"> <input type="text" class="form-control" name="name" placeholder="Nome">  </div>
+                    <div class="inputbox"> <input type="text" class="form-control" name="lastname" placeholder="Sobrenome">  </div>
+                    <div class="inputbox"> <input type="text" class="form-control" name="username" placeholder="Username">  </div>
+                </div>
+                <div class="mt-2"> <button class="btn btn-primary btn-block">Cadastrar</button> </div>
+            </div>
+        </form>
     </div>
 </div>
-</div>
+<script>
+    function mostrar(id) {
+        if (document.getElementById(id).style.display !== "none") {
+            document.getElementById(id).style.display = "none";
+            return;
+        }
+        Array.from(document.getElementsByClassName("hidden")).forEach(
+            div => (div.style.display = "none")
+        );
+        document.getElementById(id).style.display = "block";
+    }
+
+</script>
 
 {%endblock%}
