@@ -2,23 +2,25 @@
 {% block content %}
 <!--Search-->
 <div class="container mt-5">
+  <form method="POST">
   <div class="container center-obj"  >
     <div class="obj-relative-92 hw-obj title-home">
       <h1 style="color: yellow">{%block title%}Pesquisar Locais{%endblock%}</h1>
     </div>
     <div class="input-group rounded p-5 search-obj ">
-      <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+      <input name="localizacao" type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                                                                              aria-describedby="search-addon" />
       <button class="input-group-text border-0 yllw" id="search-addon">
         <i class="fas fa-search"></i>
       </button>
     </div>
   </div>
+  </form>
 </div>
 <div class=" title-home map-search center-obj mt-7 mb-5">
   <h1 style="color: yellow;">Locais próximos a você</h1>
-  <div class="map-location mt-5 mb-5">
-    <img src="../static/img/google-maps.JPG" alt="maps location">
+  <div  class="map-location mt-5 mb-5" style="width: 70%">
+    {{ map | safe }}
   </div>
 
 </div>
