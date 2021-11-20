@@ -3,3 +3,5 @@ Flask-Mail
 connexion
 psycopg2
 psycopg2-binary
+geopy
+folium
