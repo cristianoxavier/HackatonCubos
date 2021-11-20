@@ -83,11 +83,23 @@ html, body {height:100%;}
   margin:0;
   padding:0;
 }
-
-
-
+.stlBtn1, .stlBtn2 {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.stlBtn1 {
+  background-color: #4b61d1;
+  color: #fff;
+}
+.stlBtn2 {
+  background-color: yellow;
+  width: 90px;
+}
 .geral {
-  min-height:90%;
+  min-height:80vh;
   position:relative;
   width:800px;
 }
@@ -97,6 +109,7 @@ html, body {height:100%;}
   bottom:0;
   width:100%;
 }
+
 @media only screen and (max-width: 600px) {
   .mgrl {
     width: 100%;
@@ -104,5 +117,7 @@ html, body {height:100%;}
   .rckt {
     width: 100%;
   }
-  
+  .stlBtn2 {
+    margin-top: 15px;
+} 
 }
