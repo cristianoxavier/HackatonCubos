@@ -54,7 +54,8 @@ def parceiros():
 @app.route('/search', methods=('GET', 'POST'))
 def search():
     if request.method == 'GET':
-        return render_template('search.html')
+        map = buscar_endereco({'localizacao': 'brasil'})
+        return render_template('search.html', map=map._repr_html_())
     elif request.method == "POST":
         args = request.form
         map = buscar_endereco(args)

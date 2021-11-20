@@ -1,5 +1,5 @@
 import psycopg2
-from enviroment import DBHOST, DB_NAME, DB_USER, DB_PASS
+from .enviroment import DBHOST, DB_NAME, DB_USER, DB_PASS
 
 
 class Conexao(object):
