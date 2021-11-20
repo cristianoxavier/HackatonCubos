@@ -6,3 +6,5 @@ DB_USER = os.getenv("DB_USER")
 DB_PASS = os.getenv("DB_PASS")
 HOST = os.getenv("IP_ADDRESS") or "localhost"
 PORT = os.getenv("SERVER_PORT") or 8080
+EMAIL = os.getenv("EMAIL")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")

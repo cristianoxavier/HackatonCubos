@@ -1,6 +1,12 @@
 {% extends 'base.html'%}
 {% block content%}
 <div>
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
   <div class="container bg-blue" style="width: auto; height: auto; border-radius: 30px;">
     <div class="row align-items-center mt-5 mb-5 bg-blue" style="border-radius: 30px;">
       <div class="col-6 mx-auto mb-5">
