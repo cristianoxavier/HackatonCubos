@@ -3,6 +3,15 @@ from configurations.enviroment import EMAIL
 
 
 def envia_email(*args):
-    msg = Message('Hello', sender=EMAIL, recipients=[EMAIL])
-    msg.body = "Hello Flask message sent from Flask-Mail"
+    infos = args[0]
+    msg = Message('Empresa Interessada', sender=EMAIL, recipients=[EMAIL])
+    msg.body = f"""
+    Olá Equipe!
+    
+    Uma empresa se interessou, por favor entre em contato para mais detalhes!
+    Nome da empresa: {infos['inputName']}
+    E-mail para contato: {infos['inputEmail']}
+    Telefone: {infos['inputPhone']}
+    Mensagem: {infos['inputText']}
+    """
     return msg
