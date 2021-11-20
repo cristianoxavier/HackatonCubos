@@ -33,7 +33,7 @@ Dillinger uses a number of open source projects to work properly:
 * psycopg2
 * psycopg2-binary
 * geopy
-* folium⏎ 
+* folium
 
 ## License
 *description*
