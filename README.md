@@ -20,10 +20,10 @@ A pygmy conecta você com o futuro.
 
 Dillinger uses a number of open source projects to work properly:
 
-- [Bootstrap] - HTML enhanced for web apps!
-- [Flask] - awesome web-based text editor
-- [GeoPy] - fast node.js network app framework [@tjholowaychuk]
-- [Python] - the streaming build system
+- [Bootstrap] - *description*
+- [Flask] - *description*
+- [GeoPy] - *description*
+- [Python] - *description*
 
 
 ## Installation | Requeriments
