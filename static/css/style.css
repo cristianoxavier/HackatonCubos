@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 body {
-    background-image: url('../img/startbg.png');
+  background-image: url('../img/startbg.png');
 }
 html, body {height:100%;}
 .fontWhite {
@@ -52,16 +53,16 @@ html, body {height:100%;}
   background: yellow !important;
 }
 .title-home {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    margin-top: 5%;
-    margin-bottom: 0;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 5%;
+  margin-bottom: 0;
+  position: relative;
 }
 .title-home {
-    font-family: 'Anton', sans-serif;
-    text-shadow: 0.1em 0.1em 0.1em gray;
+  font-family: 'Anton', sans-serif;
+  text-shadow: 0.1em 0.1em 0.1em gray;
 
 }
 .mgrl {
@@ -99,11 +100,26 @@ html, body {height:100%;}
   width: 90px;
 }
 .geral {
-  min-height:80vh;
+  min-height:90vh;
   position:relative;
   width:800px;
 }
-
+.fsize {
+  font-size: 90px;
+}
+.fsizesobre {
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  background-color: yellow;
+}
+.fsizesobre {
+  border-radius: 20px;
+}
+.indexScreen{
+  min-height:100vh;
+  position:relative;
+  width:800px;
+}
 .footer {
   position:absolute;
   bottom:0;
@@ -119,5 +135,9 @@ html, body {height:100%;}
   }
   .stlBtn2 {
     margin-top: 15px;
-} 
+  }
+
+  .fsize {
+    font-size: 70px;
+  }
 }
