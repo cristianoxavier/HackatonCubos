@@ -4,7 +4,7 @@ from configurations.enviroment import EMAIL
 
 def envia_email(*args):
     infos = args[0]
-    msg = Message('Empresa Interessada', sender=EMAIL, recipients=[EMAIL])
+    msg = Message('Uma empresa se interessou!', sender=EMAIL, recipients=[EMAIL])
     msg.body = f"""
     Olá Equipe!
     
