@@ -2,7 +2,7 @@
 ![logo]
 ## ME AJUDE A ESTUDAR
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](#)
 
 ### Sobre
 Nós somos a pygmy, nascemos com a intenção de querer ajudar pessoas através da tecnologia inclusiva.
