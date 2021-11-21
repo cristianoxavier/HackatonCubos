@@ -3,7 +3,7 @@
 ## ME AJUDE A ESTUDAR
 
 
-### 🚀 Sobre
+### 🚀 Sobre :computer:
 Nós somos a pygmy, nascemos com a intenção de querer ajudar pessoas através da tecnologia inclusiva.
 Criando uma ponte entre empresas e pessoas que querem aprender,
 e começar uma nova carreira na área da tecnologia.
