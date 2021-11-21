@@ -1,4 +1,5 @@
 # MAE
+[logo]
 ## ME AJUDE A ESTUDAR
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
@@ -45,3 +46,4 @@ Dillinger uses a number of open source projects to work properly:
    [Python]: <https://www.python.org/>
    [GeoPy]: <https://geopy.readthedocs.io/en/stable/>
    [Flask]: <https://flask.palletsprojects.com/en/2.0.x/>
+   [logo]: <https://github.com/cristianoxavier/HackatonCubos/blob/main/static/img/icon/icon.png>
